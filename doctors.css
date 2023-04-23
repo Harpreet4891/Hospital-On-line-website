@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(images/hospitalbg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   /* Header styles */
@@ -28,6 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 5%;
   }
   
   nav ul {
@@ -43,6 +47,21 @@ body {
     text-decoration: none;
     font-size: larger;
   }
+  nav .search-container{
+    margin-left: 10px;
+  }
+  nav .search-container input{
+    height: 22px;
+    border-radius: 8px;
+  }
+  nav .search-container button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* dropdown style */
 
   .container {
     max-width: 800px;
@@ -53,18 +72,44 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
   }
   
   .col {
     flex-basis: 48%;
-    margin-bottom: 20px;
+    background-color: #f1f1f1dd;
+    margin-right: 5px;
+    text-decoration: solid;
   }
-  
+  .col select {
+    margin: 25px;
+    width: 50%;
+    height: 50%;
+  }
+  .col label {
+    margin: 25px;
+    color: rgb(190, 46, 46);
+    font-weight: bolder;
+  }
+  .col:hover{
+    transform: scale(1.05);
+    font-size: x-large;
+  }
   @media only screen and (max-width: 600px) {
     .col {
       flex-basis: 100%;
     }
+  }
+
+  /* footer style */
+  footer p{
+    margin-top: 7%;
+    background-color: #ccc;
+    color: #333;
+    padding: 20px;
+    text-align: center;
   }
   

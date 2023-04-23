@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        h1,
-        h2 {
-            text-align: center;
-            font-size: 30px;
-            color: rgb(83, 78, 78);
-        }
-
-        .button {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .button button {
-            font-size: 30px;
-            border-radius: 10px;
-            color: rgb(83, 78, 78);
-            border: none;
-            background-color: aquamarine;
-            padding: 10px;
-        }
-
-        .button button:hover {
-            background-color: brown;
-            color: beige;
-        }
-    </style>
 </head>
-
 <body>
-    <div class="main">
-        <h1>Welcome to HOSON</h1>
-        <h2>CHOOSE YOUR LANGUAGE / ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ</h2>
-        <div class="button">
-            <a href="Home.html"><button>English</button></a>
-            <a href="Home.html"><button>ਪੰਜਾਬੀ</button></a>
-        </div>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Hospital Management System logo">
+      <h1>Hoson</h1>
     </div>
-</body>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Appointment status</a></li>
+        <li><a href="#"><i class="fas fa-user-plus"></i> Sign up</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i>Help</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <button class="appointment-button" onclick="window.location.href='appointment.html';">Make an Appointment</button>
 
+<div class="card-container">
+    <div class="card">
+      <img src="images/hospital.png" alt="Image" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title">Hospital</h2>
+        <p class="card-text">Find Hospital</p>
+        <a href="hospital.html" class="card-btn">Click here</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/doctor.png" alt="Image" class="card-img">
+      <div class="card-content">
+        <h2 class="card-title">Doctor</h2>
+        <p class="card-text">Find Doctor</p>
+        <a href="doctors.html" class="card-btn">Click here</a>
+      </div>
+    </div>
+  </div>
+    
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a team of healthcare professionals dedicated to providing the best possible care for our patients.</p>
+    </section>
+    
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Emergency Care</li>
+        <li>Inpatient Care</li>
+        <li>Outpatient Care</li>
+        <li>Diagnostic Services</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Hospital Online Management Systems. All rights reserved.</p>
+  </footer>
+</body>
 </html>
