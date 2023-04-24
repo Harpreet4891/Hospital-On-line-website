@@ -1,0 +1,40 @@
+
+
+header {
+	background-color: #496580;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 70px;
+	margin-right: 10px;
+}
+
+.container {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+  }
+  .card {
+	width: 550px;
+	height: 550px;
+	background-color: #4486cd2d;
+  }
+  .card-header{
+	  background-color: #496580;
+	  color: white;
+  }
+  .card-body{
+	  margin-top: 10vh;
+  }

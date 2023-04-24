@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  header {
+    background-color: #496580;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-right: 60px;
+    gap: 40px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  nav a:hover {
+    color: rgb(223, 202, 41);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 10%;
+  }
+
+  .patient-details{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  .patient-counter{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    background-color: #4486cd;
+    margin-top: 10%;
+
+  }
+  
+  
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter label{
+    font-size: large;
+    
+  }
+  .counter h3{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .counter-text {
+    margin-left: 10px;
+    margin-right: 1vw;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .counter-buttons {
+    margin-left: 10px;
+    
+  }
+  
+  .counter-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  .counter-button:hover {
+    background-color: #aaa;
+  }
+  
+  .counter-increase {
+    margin-right: 5px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+  
+
+  
+    .counter-button {
+      padding: 3px 8px;
+    }
+  
+   
+  }
+  footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
